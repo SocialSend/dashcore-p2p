@@ -5,8 +5,8 @@ The quickest way to get connected is to run the following:
 
 ```javascript
 
-var Pool = require('bitcore-p2p').Pool;
-var Networks = require('bitcore-lib-dash').Networks;
+var Pool = require('socialsendcore-p2p').Pool;
+var Networks = require('socialsendcore-lib').Networks;
 
 var pool = new Pool({network: Networks.livenet});
 

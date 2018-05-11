@@ -1,5 +1,5 @@
 # Messages
-The bitcoin protocol specifies a set of [messages](https://en.bitcoin.it/wiki/Protocol_specification) that can be sent from peer to peer. `bitcore-p2p` provides support for some of these messages.
+The bitcoin protocol specifies a set of [messages](https://en.bitcoin.it/wiki/Protocol_specification) that can be sent from peer to peer. `socialsendcore-p2p` provides support for some of these messages.
 
 To create a message, you can use any of the message constructors, here is a simple example:
 
@@ -39,7 +39,7 @@ var messages = new Messages({network: Networks.testnet});
 
 ## List of Messages
 ### Version
-The version message (`ver`) is used on connection creation, to advertise the type of node. The remote node will respond with its version, and no communication is possible until both peers have exchanged their versions. By default, bitcore advertises itself as named `bitcore` with the current version of the `bitcore-p2p` package.
+The version message (`ver`) is used on connection creation, to advertise the type of node. The remote node will respond with its version, and no communication is possible until both peers have exchanged their versions. By default, bitcore advertises itself as named `bitcore` with the current version of the `socialsendcore-p2p` package.
 
 ### VerAck
 Finishes the connection handshake started by the `ver` message.
